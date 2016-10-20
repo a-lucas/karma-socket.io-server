@@ -1,6 +1,6 @@
 {
   "name": "karma-socket-io-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Karma plugin that allows you to create a tiny socket.io server to handle some testing cases",
   "main": "index.js",
   "repository": {
