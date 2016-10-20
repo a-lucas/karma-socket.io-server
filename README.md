@@ -1,7 +1,15 @@
 # karma-socket.io-server
 Launch and configure a Socket.IO server to run your tests against.
 
-## instalation
+## About
+
+- The `socket.io.js` client library is available at the address specified in the `karma.conf` file. By default, `http://localhost:[port]/socket.io/socket.io.js`
+- You can test the `allowRequest` functionality
+- As many `emit` and `on` as needed.
+- You get access to karma's logger.
+
+
+## Installation
 
 ```bash
 npm install -g  karma-socket.io-server
@@ -32,7 +40,7 @@ module.exports = function (config) {
             
             allowRequest: function(handshake, cb) {
                 return cb(null, true); // authorize every connections
-            }
+            },
             
             
             // OPTIONAL: This function takes the socket client which is initialize after the on('connection')
