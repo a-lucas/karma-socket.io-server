@@ -48,5 +48,5 @@ var createSocketIOServer = function (args, config, logger, helper) {
 
 // PUBLISH DI MODULE
 module.exports = {
-    'framework:socket.io-server': ['factory', createSocketIOServer]
+    'framework:socket-io-server': ['factory', createSocketIOServer]
 };

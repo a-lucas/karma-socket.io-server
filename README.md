@@ -1,4 +1,4 @@
-# karma-socket.io-server
+# karma-socket-io-server
 Launch and configure a Socket.IO server to run your tests against.
 
 ## About
@@ -22,13 +22,10 @@ npm install -g  karma-socket.io-server
 
 module.exports = function (config) {
     config.set({
-        basePath: '.',
-        frameworks: [ 'karma-socket.io-server'],
-
-        files: [
-        ],
-
-        autoWatch: true,
+    
+        hostname: 'localhost',
+    
+        frameworks: [ 'socket-io-server'],
 
         socketIOServer: {
             // MANDATORY: Which port the server will listen to.
@@ -54,11 +51,7 @@ module.exports = function (config) {
                 
                 socket.emit('DID_YOU_RECEIVE', '_this? ');
             }
-        },
-
-        plugins: [           
-            'karma-socket.io-server'
-        ]
+        }
     });
 };
 
