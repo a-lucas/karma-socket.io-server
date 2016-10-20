@@ -9,6 +9,7 @@
   },
   "author": "Antoine LUCAS <antoine.lucas.australia@gmail.com>",
   "keywords": [
+    "karma",
     "karma-plugin",
     "socket server",
     "socket.io"
